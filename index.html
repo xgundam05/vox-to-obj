@@ -1,0 +1,48 @@
+<html>
+<head>
+  <script src='scripts/libs/three.js'></script>
+  <script src='scripts/libs/orbitControls.js'></script>
+
+  <script src='scripts/shaders/SSAOShader.js'></script>
+  <script src='scripts/shaders/CopyShader.js'></script>
+
+  <script src='scripts/postprocessing/EffectComposer.js'></script>
+  <script src='scripts/postprocessing/ManualMSAARenderPass.js'></script>
+  <script src='scripts/postprocessing/RenderPass.js'></script>
+  <script src='scripts/postprocessing/ShaderPass.js'></script>
+  <script src='scripts/postprocessing/MaskPass.js'></script>
+
+  <script src='scripts/UI/page.js'></script>
+  <link rel='stylesheet' type='text/css' href='base.css'>
+</head>
+<body>
+  <div id='container'></div>
+  <input type='file' id='stlFile' accept='.obj' nwsaveas='output.obj' style='display:none;'/>
+  <image src='palette.png' id='palette1' style='display:none;'></image>
+  <div id='options' class='draggable'>
+    <div class='title'>OPTIONS</div>
+    <div class='option'>
+      Vox File <input id='voxFile' type='file' accept='.vox' />
+    </div>
+    <hr/>
+    <div class='option'>
+      Texel Size <input id='texelSize' type='number' />
+    </div>
+    <div class='option'>
+      Padding <input id='padding' type='number' />
+    </div>
+    <div class='option'>
+      Center Model <input id='center' type='checkbox' />
+    </div>
+    <div class='option'>
+      Palette <input id='palFile' type='file' accept='image/png'/>
+    </div>
+    <div class='image'>
+      <canvas class='preview' id='palette' width='64' height='64' />
+    </div>
+    <hr/>
+    <input type='button' value='GENERATE' id='generate' disabled="true"/>
+    <input type='button' value='EXPORT' id='export' disabled="true"/>
+  </div>
+</body>
+</html>

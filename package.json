@@ -1,0 +1,15 @@
+{
+  "main": "index.html",
+  "name": "vox-converter",
+  "description": "voxel-to-obj converter",
+  "chromium-args": "--disable-setuid-sandbox --enable-webgl --ignore-gpu-blacklist",
+  "window": {
+    "icon": "icon.png",
+    "title": "vox-converter",
+    "frame": true,
+    "width": 800,
+    "height": 600,
+    "min_width": 640,
+    "min_height": 480
+  }
+}

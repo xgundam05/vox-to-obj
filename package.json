@@ -1,5 +1,6 @@
 {
   "main": "index.html",
+  "version": "1.0.0",
   "name": "vox-converter",
   "description": "voxel-to-obj converter",
   "chromium-args": "--disable-setuid-sandbox --enable-webgl --ignore-gpu-blacklist",
